@@ -37,7 +37,7 @@ export const projects: Project[] = [
 				'The FlashNavigator allows you to quickly navigate to your favourite pages. Your data is never shared or saved by us. Jump through the web in record time.'
 		},
 		tags: ['NextJS', 'TailwindCSS', 'React', 'Clerk', 'TypeScript', 'DayJS', 'Lucide Icons'],
-		link: 'https://flashnavigator.vercel.app',
+		link: 'https://flash.navigator.vercel.app',
 		github: 'https://github.com/neinja007/FlashNavigator',
 		language: ['english'],
 		status: 'ACTIVE',

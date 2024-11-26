@@ -223,7 +223,7 @@ export const projects: Project[] = [
 				'Here you can open your own ice cream shop and sell ice cream to people. With marketing on the moon, everyone will want to buy ice cream.'
 		},
 		tags: ['JavaScript', 'HTML'],
-		link: 'https://ice-cream-tycoon.web.app',
+		link: 'https://icecreamtycoon.web.app',
 		language: ['english'],
 		status: 'ACTIVE',
 		priority: 'LOW'
@@ -242,13 +242,13 @@ export const projects: Project[] = [
 		priority: 'LOW'
 	},
 	{
-		title: 'Screen Saver Project',
+		title: 'Screen Saver Pro',
 		description: {
 			german: 'Ein wirklich toller Bildschirmschoner mit Bällen.',
 			english: 'A really cool screensaver with balls.'
 		},
 		tags: ['JavaScript', 'HTML', 'P5Js'],
-		link: 'https://screen-saver-project.web.app',
+		link: 'https://screen-saver-pro.web.app',
 		language: ['english'],
 		status: 'ACTIVE',
 		priority: 'LOW'

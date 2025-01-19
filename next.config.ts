@@ -5,7 +5,17 @@ const nextConfig: NextConfig = {
 		return [
 			{
 				source: '/CV',
-				destination: '/CV.pdf',
+				destination: '/CV-EN.pdf',
+				permanent: true
+			},
+			{
+				source: '/CV-en',
+				destination: '/CV-EN.pdf',
+				permanent: true
+			},
+			{
+				source: '/CV-de',
+				destination: '/CV-DE.pdf',
 				permanent: true
 			}
 		];

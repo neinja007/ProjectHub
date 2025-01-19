@@ -4,8 +4,8 @@ const Page = () => {
 	return (
 		<div>
 			Redirecting to{' '}
-			<Link href='/CV.pdf' className='text-blue-500'>
-				CV.pdf
+			<Link href='/CV-EN.pdf' className='text-blue-500'>
+				CV-EN.pdf
 			</Link>
 			...
 		</div>

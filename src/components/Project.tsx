@@ -38,7 +38,7 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 				<div className='bg-[#1a1a1a] p-6 rounded-lg border border-[#333] hover:border-[#555] transition-colors'>
 					<h2 className='text-2xl font-semibold mb-3 flex justify-between'>
 						<div className='flex items-center gap-2'>
-							<div className='border mr-2 rounded-md overflow-hidden w-12 h-auto'>
+							<div className='border mr-2 rounded-md overflow-hidden w-auto h-auto'>
 								{project.language.includes('german') && <German />}
 								{project.language.includes('english') && <English />}
 							</div>

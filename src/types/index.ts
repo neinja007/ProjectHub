@@ -30,4 +30,5 @@ export type Project = {
 	language: Language[];
 	status?: 'ACTIVE' | 'NO LONGER MAINTAINED' | 'UNDER DEVELOPMENT';
 	priority: 'HIGH' | 'MEDIUM' | 'LOW';
+	imageUrlSuffix?: string;
 };

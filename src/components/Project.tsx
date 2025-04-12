@@ -2,6 +2,7 @@ import { Tag, Project as ProjectType, Language } from '@/types';
 import Link from 'next/link';
 import German from './German';
 import English from './English';
+import Image from 'next/image';
 
 const mapTagToColor: Record<Tag, string> = {
 	React: 'bg-sky-400 text-black',
@@ -38,10 +39,16 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 				<div className='bg-[#1a1a1a] p-6 rounded-lg border border-[#333] hover:border-[#555] transition-colors'>
 					<h2 className='text-2xl font-semibold mb-3 flex justify-between'>
 						<div className='flex items-center gap-2'>
-							<div className='border mr-2 rounded-md overflow-hidden w-auto h-auto'>
-								{project.language.includes('german') && <German />}
-								{project.language.includes('english') && <English />}
-							</div>
+							<Image
+								src={
+									'https://external-content.duckduckgo.com/iu/?u=' +
+									project.link +
+									(project.imageUrlSuffix || '/favicon.ico')
+								}
+								alt={project.title}
+								width={32}
+								height={32}
+							/>
 							<span>{project.title}</span>
 							{project.status && (
 								<span
@@ -56,6 +63,10 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 									{project.status}
 								</span>
 							)}
+						</div>
+						<div className='border mr-2 rounded-md overflow-hidden w-auto h-auto'>
+							{project.language.includes('german') && <German />}
+							{project.language.includes('english') && <English />}
 						</div>
 						{!!project.link && (
 							<Link href={project.link} className='text-base italic font-serif text-blue-500 underline'>
@@ -91,18 +102,17 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 		return (
 			<div className='flex mb-1 items-center justify-between p-2 px-3 border border-[#333] rounded-lg'>
 				<div className='flex items-center gap-2'>
-					<div className='flex gap-1'>
-						{project.language.includes('german') && (
-							<div className='border rounded-md overflow-hidden w-6 h-auto'>
-								<German />
-							</div>
-						)}
-						{project.language.includes('english') && (
-							<div className='border rounded-md overflow-hidden w-6 h-auto'>
-								<English />
-							</div>
-						)}
-					</div>
+					<Image
+						src={
+							'https://external-content.duckduckgo.com/iu/?u=' +
+							project.link +
+							(project.imageUrlSuffix || '/favicon.ico')
+						}
+						alt=''
+						width={32}
+						height={32}
+						className='size-6'
+					/>
 					<span>{project.title}</span>
 					{project.status && (
 						<span
@@ -117,6 +127,18 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 							{project.status}
 						</span>
 					)}
+					<div className='flex gap-1'>
+						{project.language.includes('german') && (
+							<div className='border rounded-md overflow-hidden w-6 h-auto'>
+								<German />
+							</div>
+						)}
+						{project.language.includes('english') && (
+							<div className='border rounded-md overflow-hidden w-6 h-auto'>
+								<English />
+							</div>
+						)}
+					</div>
 				</div>
 				{project.link && (
 					<Link href={project.link} className='text-base italic font-serif text-blue-500 underline'>

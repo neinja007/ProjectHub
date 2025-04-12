@@ -55,7 +55,8 @@ export const projects: Project[] = [
 		link: 'https://lateinx.vercel.app',
 		language: ['german'],
 		status: 'NO LONGER MAINTAINED',
-		priority: 'LOW'
+		priority: 'LOW',
+		imageUrlSuffix: '/icon.ico'
 	},
 	{
 		title: 'Lateininator v3',
@@ -111,7 +112,8 @@ export const projects: Project[] = [
 		link: 'https://planinator.at',
 		language: ['german'],
 		status: 'ACTIVE',
-		priority: 'LOW'
+		priority: 'LOW',
+		imageUrlSuffix: '/icon.png'
 	},
 	{
 		title: 'TimeTurkey',
@@ -137,7 +139,8 @@ export const projects: Project[] = [
 		link: 'https://lateininator.web.app',
 		language: ['german'],
 		status: 'NO LONGER MAINTAINED',
-		priority: 'LOW'
+		priority: 'LOW',
+		imageUrlSuffix: '/logos/logo_small.png'
 	},
 	{
 		title: 'Coin Addict',
@@ -226,7 +229,8 @@ export const projects: Project[] = [
 		link: 'https://icecreamtycoon.web.app',
 		language: ['english'],
 		status: 'ACTIVE',
-		priority: 'LOW'
+		priority: 'LOW',
+		imageUrlSuffix: '/favicon.png'
 	},
 	{
 		title: 'Fitinator / Gyminator',
@@ -265,7 +269,8 @@ export const projects: Project[] = [
 		link: 'https://domi-nator.web.app',
 		language: ['english'],
 		status: 'ACTIVE',
-		priority: 'MEDIUM'
+		priority: 'MEDIUM',
+		imageUrlSuffix: '/favicon.png'
 	},
 	{
 		title: 'Khev.at Homepage',

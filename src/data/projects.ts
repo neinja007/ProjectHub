@@ -288,7 +288,7 @@ export const projects: Project[] = [
 			'Zod',
 			'React Query'
 		],
-		link: 'https://khev.at',
+		link: 'https://khev-homepage.vercel.app',
 		language: ['german'],
 		status: 'ACTIVE',
 		priority: 'HIGH'

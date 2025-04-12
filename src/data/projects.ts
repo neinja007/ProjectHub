@@ -54,7 +54,7 @@ export const projects: Project[] = [
 		tags: ['NextJS', 'React', 'TailwindCSS', 'TypeScript'],
 		link: 'https://lateinx.vercel.app',
 		language: ['german'],
-		status: 'ACTIVE',
+		status: 'NO LONGER MAINTAINED',
 		priority: 'LOW'
 	},
 	{
@@ -290,7 +290,7 @@ export const projects: Project[] = [
 		],
 		link: 'https://khev-homepage.vercel.app',
 		language: ['german'],
-		status: 'ACTIVE',
+		status: 'UNDER DEVELOPMENT',
 		priority: 'HIGH'
 	},
 	{
@@ -304,7 +304,7 @@ export const projects: Project[] = [
 		tags: ['NextJS', 'TailwindCSS', 'React', 'TypeScript', 'ShadCN', 'Lucide Icons', 'React Query'],
 		link: 'https://econspector.vercel.app',
 		language: ['english'],
-		status: 'ACTIVE',
+		status: 'UNDER DEVELOPMENT',
 		priority: 'HIGH'
 	}
 ];

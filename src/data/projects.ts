@@ -266,5 +266,45 @@ export const projects: Project[] = [
 		language: ['english'],
 		status: 'ACTIVE',
 		priority: 'MEDIUM'
+	},
+	{
+		title: 'Khev.at Homepage',
+		description: {
+			english:
+				'The homepage of the Khevenhüller Gymnasium in Linz, Austria. It is a website for the school to inform students and parents about the school.',
+			german:
+				'Die Homepage des Khevenhüller Gymnasiums in Linz, Österreich. Es ist eine Website für das Gymnasium, um Schülern und Eltern über das Gymnasium zu informieren.'
+		},
+		tags: [
+			'NextJS',
+			'TailwindCSS',
+			'React',
+			'TypeScript',
+			'ShadCN',
+			'Lucide Icons',
+			'PostgreSQL',
+			'Prisma',
+			'Clerk',
+			'Zod',
+			'React Query'
+		],
+		link: 'https://khev.at',
+		language: ['german'],
+		status: 'ACTIVE',
+		priority: 'HIGH'
+	},
+	{
+		title: 'EconSpector',
+		description: {
+			english:
+				'A website to analyze different economic variables, currencies, countries, and relationships between those.',
+			german:
+				'Eine Website zum Analysieren verschiedener wirtschaftlicher Variablen, Währungen, Länder und Beziehungen zwischen diesen.'
+		},
+		tags: ['NextJS', 'TailwindCSS', 'React', 'TypeScript', 'ShadCN', 'Lucide Icons', 'React Query'],
+		link: 'https://econspector.vercel.app',
+		language: ['english'],
+		status: 'ACTIVE',
+		priority: 'HIGH'
 	}
 ];

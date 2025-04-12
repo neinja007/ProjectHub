@@ -45,7 +45,7 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 									project.link +
 									(project.imageUrlSuffix || '/favicon.ico')
 								}
-								alt={project.title}
+								alt=''
 								width={32}
 								height={32}
 							/>
@@ -63,10 +63,10 @@ const Project = ({ project, language, viewMode }: ProjectProps) => {
 									{project.status}
 								</span>
 							)}
-						</div>
-						<div className='border mr-2 rounded-md overflow-hidden w-auto h-auto'>
-							{project.language.includes('german') && <German />}
-							{project.language.includes('english') && <English />}
+							<div className='mr-2 rounded-md overflow-hidden w-12 h-auto'>
+								{project.language.includes('german') && <German />}
+								{project.language.includes('english') && <English />}
+							</div>
 						</div>
 						{!!project.link && (
 							<Link href={project.link} className='text-base italic font-serif text-blue-500 underline'>

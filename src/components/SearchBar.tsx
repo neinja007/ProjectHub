@@ -1,3 +1,5 @@
+import { projects } from '@/data/projects';
+
 type SearchBarProps = {
 	value: string;
 	onChange: (value: string) => void;
@@ -25,7 +27,7 @@ const SearchBar = ({ value, onChange }: SearchBarProps) => {
 				type='text'
 				value={value}
 				onChange={(e) => onChange(e.target.value)}
-				placeholder='Search awesome projects...'
+				placeholder={'Search ' + projects.length + ' awesome projects...'}
 				className='w-full pl-10 pr-4 py-2 text-foreground bg-[#1a1a1a] border border-[#333] rounded-lg focus:outline-none focus:border-[#555]'
 			/>
 		</div>
